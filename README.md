@@ -2,8 +2,13 @@
 
 ## A git repository for managing spectroscopic frequencies
 
-There are two folders: `catalog` and `input`. Please put the right file in
-the right place!
+There are two folders: `catalog` and `input`. Please put the right file in the right place!
+
+## Usage:
+
+Preferably, you will have your own analysis scripts to point to the folder, and adjust your usage accordingly. The plan is to also include scripts (to be written) that will generate the catalog files systematically, and perhaps some rudimentary searching functionality.
+
+A sample `template.int` is provided in input, where you should only add/remove dipole moments, as well as the partition function at 300 K.
 
 ---
 
@@ -22,6 +27,7 @@ and intensity.
 2. Intensities calculated at 300 K
 3. If available, the `.par`, `.var`, `.lin`, and `.int` files in the folder
 `input`
+4. Calculate frequencies up to 500 GHz
 
 _Naming convention:_
 
@@ -42,4 +48,3 @@ C2S_00000.cat
 
 Example for $\mathrm{C_2S}$ with one $^{13}$C, $\nu_4=2$:
 C2S_00020_C13.list
-
