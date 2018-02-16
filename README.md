@@ -1,10 +1,40 @@
 # LabSpecDB
 
-## A git repository for managing spectroscopic frequencies
+## A git repository for cataloging laboratory spectroscopy data
 
 There are two folders: `catalog` and `input`. Please put the right file in the right place!
 
+---
+
 ## Usage:
+
+### Setup
+
+Clone this repository to your computer with:
+
+`git clone https://github.com/laserkelvin/LabSpecDB.git`
+
+This will clone the `master` branch, which should be the most stable version of the database.
+
+### Updating your local database from remote Git
+
+This will update your local database with the newest on Git.
+
+`git fetch`
+
+`git pull`
+
+### Creating a new branch
+
+Running `git checkout -b [name of branch]` will create a new branch locally. If you want to push this onto the web, you'll have to add a remote branch:
+
+`git push --set-upstream origin [name of branch]`
+
+### Updating the remote database
+
+See https://git-scm.com/docs/git-request-pull
+
+When you want to contribute new files, it may be best to have your own personal branch. Routine
 
 Preferably, you will have your own analysis scripts to point to the folder, and adjust your usage accordingly. The plan is to also include scripts (to be written) that will generate the catalog files systematically, and perhaps some rudimentary searching functionality.
 
@@ -47,4 +77,5 @@ Example for $\mathrm{C_2S}$ vibrational ground state, normal species:
 C2S_00000.cat
 
 Example for $\mathrm{C_2S}$ with one $^{13}$C, $\nu_4=2$:
+
 C2S_00020_C13.list
