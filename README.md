@@ -57,9 +57,12 @@ and intensity.
 2. Intensities calculated at 300 K
 3. If available, the `.par`, `.var`, `.lin`, and `.int` files in the folder
 `input`
-4. Calculate frequencies up to 500 GHz
+4. Calculate frequencies up to 1000 GHz
+5. When possible, catalog files include measured frequencies (`calmrg`)
 
-_Naming convention:_
+---
+
+##Naming convention
 
 1. Capital letter atoms
 2. Separated by underscores
@@ -72,10 +75,26 @@ to the normal modes ordered by __frequency__:
     - Mass + Atom
     - e.g. _13C_
 
-Example for $\mathrm{C_2S}$ vibrational ground state, normal species:
+Example for $\mathrm{C_3S}$ vibrational ground state, normal species:
 
-C2S_00000.cat
+C3S_00000.cat
 
-Example for $\mathrm{C_2S}$ with one $^{13}$C, $\nu_4=2$:
+Example for $\mathrm{C_3S}$ with one $^{13}$C, $\nu_4=2$:
 
-C2S_00020_C13.list
+C3S_C13_00020.list
+
+For $l \neq 0$ states:
+
+C3S_C13-1_00002-l1.cat
+
+For cyclic molecules:
+
+C3H2-c_xxx.cat
+
+For electronically excited states, put the state label at the end. For example,
+the $A$ state of SO with v=2:
+
+SO_2_A.cat
+
+When in doubt, use the typical naming order, which orders carbon first, then
+hydrogen, then oxygen and so on.
